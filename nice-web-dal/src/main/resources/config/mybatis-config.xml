@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <typeAliases>
+        <typeAlias alias="TSttSettleScheme" type="com.nice.dal.model.TSttSettleScheme" />
+	</typeAliases>
+    <plugins>
+        <plugin interceptor="com.nice.dal.interceptor.QueryPageInterceptor">
+            <property name="sqlmapId" value=".*Page$"/>
+        </plugin>
+    </plugins>
+</configuration>

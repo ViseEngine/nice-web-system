@@ -1,0 +1,4 @@
+zookeeper.address=${zookeeper_address}
+dubbo.port=${dubbo_port}
+
+log.path=${log_path}
