@@ -15,11 +15,11 @@
     <dependencies>
         <dependency>
             <groupId>com.nice</groupId>
-            <artifactId>nice-dal</artifactId>
+            <artifactId>nice-web-dal</artifactId>
         </dependency>
         <dependency>
             <groupId>com.nice</groupId>
-            <artifactId>nice-service-api</artifactId>
+            <artifactId>nice-web-service-api</artifactId>
         </dependency>
 
         <dependency>

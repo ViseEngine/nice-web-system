@@ -49,27 +49,27 @@
         <dependencies>
             <dependency>
                 <groupId>com.nice</groupId>
-                <artifactId>nice-common</artifactId>
+                <artifactId>nice-web-common</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.nice</groupId>
-                <artifactId>nice-dal</artifactId>
+                <artifactId>nice-web-dal</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.nice</groupId>
-                <artifactId>nice-manager</artifactId>
+                <artifactId>nice-web-manager</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.nice</groupId>
-                <artifactId>nice-service-api</artifactId>
+                <artifactId>nice-web-service-api</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.nice</groupId>
-                <artifactId>nice-service</artifactId>
+                <artifactId>nice-web-service</artifactId>
                 <version>${project.version}</version>
             </dependency>
 

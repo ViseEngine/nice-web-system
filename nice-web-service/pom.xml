@@ -16,19 +16,19 @@
     <dependencies>
         <dependency>
             <groupId>com.nice</groupId>
-            <artifactId>nice-common</artifactId>
+            <artifactId>nice-web-common</artifactId>
         </dependency>
         <dependency>
             <groupId>com.nice</groupId>
-            <artifactId>nice-dal</artifactId>
+            <artifactId>nice-web-dal</artifactId>
         </dependency>
         <dependency>
             <groupId>com.nice</groupId>
-            <artifactId>nice-manager</artifactId>
+            <artifactId>nice-web-manager</artifactId>
         </dependency>
         <dependency>
             <groupId>com.nice</groupId>
-            <artifactId>nice-service-api</artifactId>
+            <artifactId>nice-web-service-api</artifactId>
         </dependency>
 
 

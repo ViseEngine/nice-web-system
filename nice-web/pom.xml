@@ -14,7 +14,7 @@
     <dependencies>
         <dependency>
             <groupId>com.nice</groupId>
-            <artifactId>nice-service</artifactId>
+            <artifactId>nice-web-service</artifactId>
         </dependency>
 
         <!-- spring mvc-->
