@@ -665,13 +665,9 @@
                 <artifactId>maven-jar-plugin</artifactId>
                 <version>2.2</version>
                 <configuration>
-                    <excludes>
-                        <!--exclude>**/spring/**</exclude -->
-                        <exclude>**/assemble/**</exclude>
-                        <exclude>**/app-dev.properties</exclude>
-                        <exclude>**/dubbo.properties</exclude>
-                        <exclude>**/slf4j*.xml</exclude>
-                    </excludes>
+                    <includes>
+                        <include>**/*.class</include>
+                    </includes>
                 </configuration>
             </plugin>
             <plugin>
@@ -701,32 +697,6 @@
         </extensions>
     </build>
 
-    <repositories>
-        <repository>
-            <id>bestpay</id>
-            <name>bestpay</name>
-            <!-- 必须要配置域名，测试环境自动化部署的IP与本地IP不同 -->
-            <url>http://172.26.7.12:8081/nexus/content/groups/public/</url>
-            <releases>
-                <enabled>true</enabled>
-            </releases>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-        </repository>
-        <repository>
-            <id>center</id>
-            <name>Maven Repository Switchboard</name>
-            <!-- 必须要配置域名，测试环境自动化部署的IP与本地IP不同 -->
-            <url>http://maven.apache.org</url>
-            <releases>
-                <enabled>true</enabled>
-            </releases>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-        </repository>
-    </repositories>
     <distributionManagement>
         <repository>
             <id>releases</id>
