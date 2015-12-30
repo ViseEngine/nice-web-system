@@ -40,7 +40,6 @@
         <powermock.version>1.5.1</powermock.version>
         <el.version>2.2.4</el.version>
         <env>dev</env>
-        <remote.location>scp://bpep_stt:bpep2014@172.26.7.23:/u1/bpep_stt</remote.location>
         <java.home>/opt/jdk1.7.0_60</java.home>
         <maven.build.timestamp.format>yyyyMMddHHmm</maven.build.timestamp.format>
     </properties>
@@ -558,50 +557,7 @@
         </dependencies>
     </dependencyManagement>
 
-    <profiles>
-        <profile>
-            <id>dev</id>
-            <properties>
-                <env>dev</env>
-            </properties>
-        </profile>
-        <profile>
-            <id>test</id>
-            <properties>
-                <env>test</env>
-                <java.home>/usr/java/jdk1.7.0_51</java.home>
-                <remote.location>scp://bpep_stt:12345678@172.25.132.22:/home/bpep_stt</remote.location>
-            </properties>
-        </profile>
-        <profile>
-            <id>test34</id>
-            <properties>
-                <env>test34</env>
-                <java.home>/usr/java/jdk1.7.0_51</java.home>
-                <remote.location>scp://bpep_stt:12345678@172.25.132.34:/home/bpep_stt</remote.location>
-            </properties>
-        </profile>
-        <profile>
-            <id>uat</id>
-            <properties>
-                <env>uat</env>
-                <java.home>/usr/java/jdk1.7.0_51</java.home>
-                <remote.location>scp://bpep_stt:12345678@172.26.6.32:/home/bpep_stt</remote.location>
-            </properties>
-        </profile>
-        <profile>
-            <id>product</id>
-            <properties>
-                <env>product</env>
-            </properties>
-        </profile>
-        <profile>
-            <id>qpe</id>
-            <properties>
-                <env>qpe</env>
-            </properties>
-        </profile>
-    </profiles>
+
 
     <build>
         <pluginManagement>
@@ -697,18 +653,7 @@
         </extensions>
     </build>
 
-    <distributionManagement>
-        <repository>
-            <id>releases</id>
-            <name>Nexus Release Repository</name>
-            <url>http://172.26.7.12:8081/nexus/content/repositories/releases/</url>
-        </repository>
-        <snapshotRepository>
-            <id>snapshots</id>
-            <name>Nexus Snapshot Repository</name>
-            <url>http://172.26.7.12:8081/nexus/content/repositories/snapshots/</url>
-        </snapshotRepository>
-    </distributionManagement>
+
 
 
 </project>
