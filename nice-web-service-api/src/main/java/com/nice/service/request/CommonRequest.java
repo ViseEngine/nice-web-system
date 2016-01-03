@@ -18,4 +18,12 @@ public class CommonRequest implements Serializable{
      * 发起流水号
      */
     private String initiationID;
+
+	public String getInitiationID() {
+		return initiationID;
+	}
+
+	public void setInitiationID(String initiationID) {
+		this.initiationID = initiationID;
+	}
 }

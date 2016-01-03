@@ -36,4 +36,22 @@ public class NiceServiceException extends Exception {
 
 	public NiceServiceException(String msg) {
 		super(msg);
-	}}
+	}
+
+	public String getErrCode() {
+		return errCode;
+	}
+
+	public void setErrCode(String errCode) {
+		this.errCode = errCode;
+	}
+
+	public String getErrReason() {
+		return errReason;
+	}
+
+	public void setErrReason(String errReason) {
+		this.errReason = errReason;
+	}
+	
+}

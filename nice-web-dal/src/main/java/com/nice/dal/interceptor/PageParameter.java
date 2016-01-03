@@ -35,4 +35,29 @@ public class PageParameter implements Serializable{
         this.currentPage = currentPage;
         this.pageSize = pageSize;
     }
+
+	public long getPageSize() {
+		return pageSize;
+	}
+
+	public void setPageSize(long pageSize) {
+		this.pageSize = pageSize;
+	}
+
+	public long getCurrentPage() {
+		return currentPage;
+	}
+
+	public void setCurrentPage(long currentPage) {
+		this.currentPage = currentPage;
+	}
+
+	public long getTotalCount() {
+		return totalCount;
+	}
+
+	public void setTotalCount(long totalCount) {
+		this.totalCount = totalCount;
+	}
+   
 }

@@ -1,15 +1,19 @@
 package com.nice.service.impl;
 
-import com.nice.util.SvUtils;
-import com.nice.validate.NiceValidator;
+import javax.annotation.Resource;
+
+import lombok.extern.slf4j.Slf4j;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Service;
+
 import com.nice.manager.ProductManager;
 import com.nice.service.ProductOperService;
 import com.nice.service.request.ProductAddRequest;
 import com.nice.service.response.NiceResponse;
-import lombok.extern.slf4j.Slf4j;
-import org.springframework.stereotype.Service;
-
-import javax.annotation.Resource;
+import com.nice.util.SvUtils;
+import com.nice.validate.NiceValidator;
 
 /**
  * 产品服务
@@ -22,6 +26,8 @@ import javax.annotation.Resource;
 @Service
 @Slf4j
 public class ProductOperServiceImpl implements ProductOperService {
+	
+	private static Logger log = LoggerFactory.getLogger(ProductOperServiceImpl.class);
 
     @Resource
     private ProductManager productManager;

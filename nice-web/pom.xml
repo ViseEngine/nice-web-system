@@ -16,6 +16,14 @@
             <groupId>com.nice</groupId>
             <artifactId>nice-web-service</artifactId>
         </dependency>
+        
+		<!-- 基本jsp依赖包 -->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>servlet-api</artifactId>
+			<version>2.5</version>
+			<scope>provided</scope>
+		</dependency>
 
         <!-- spring mvc-->
         <dependency>

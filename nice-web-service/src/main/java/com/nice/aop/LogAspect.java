@@ -1,12 +1,18 @@
 package com.nice.aop;
 
-import com.nice.service.request.CommonRequest;
+
+
 import lombok.extern.slf4j.Slf4j;
+
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.AfterReturning;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
+
+import com.nice.service.request.CommonRequest;
 
 /**
  * 打印日志
@@ -18,6 +24,8 @@ import org.springframework.stereotype.Component;
 @Slf4j
 public class LogAspect {
 
+	private static Logger log = (Logger) LoggerFactory.getLogger(LogAspect.class);
+	
     /**
      * 调用启动服务
      * @param joinPoint

@@ -17,4 +17,12 @@ public class ProductAddRequest extends NiceRequest {
 
     @NotBlank(message="产品名称不能为空")
     private String productName; //产品名称
+
+	public String getProductName() {
+		return productName;
+	}
+
+	public void setProductName(String productName) {
+		this.productName = productName;
+	}
 }

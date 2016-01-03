@@ -1,13 +1,18 @@
 package com.nice.common.util;
 
+import lombok.extern.slf4j.Slf4j;
+
+import org.jasypt.encryption.pbe.StandardPBEStringEncryptor;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import com.nice.enums.ErrorCodeEnum;
 import com.nice.exception.NiceServiceException;
-import com.nice.exception.NiceServiceException;
-import lombok.extern.slf4j.Slf4j;
-import org.jasypt.encryption.pbe.StandardPBEStringEncryptor;
 
 @Slf4j
 public class PasswordDecrypter {
+	
+	private static Logger log = LoggerFactory.getLogger(PasswordDecrypter.class);
 
 	private StandardPBEStringEncryptor encrypter;
 	private String key;
